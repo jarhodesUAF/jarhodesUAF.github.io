@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Math 661</title>
+</head>
+<body>
+<h2><b>Math/CS 661: Optimization --- Fall 2013</b></h2>
+<p>To contact the instructor: <a href="mailto:j.rhodes@alaska.edu"><span class="s1">j.rhodes@alaska.edu</span></a></p>
+<p>Course syllabus: <a href="M661syl.pdf"><span class="s1">M661syl.pdf</span></a></p>
+<p>Matlab m-files (and errata) for Ferris, Mangasarian, &amp; Wright are available here: <a href="http://www.cs.wisc.edu/math-prog/lpbook/"><span class="s1">http://www.cs.wisc.edu/math-prog/lpbook/</span></a></p>
+<p>&nbsp;</p>
+<h3><b>Homework Assignments:</b></h3>
+<p>The dates below are when problems were assigned. Unless otherwise noted, problems are always due the following Monday.</p>
+<p>Problems are from Nocedal &amp; Wright, unless otherwise stated.</p>
+
+<ul class="ul1">
+  <li>9/6 none</li>
+  <li>9/9 Read Chapter 1; (1) Show, using the definition of convex, that a region defined by linear equalities and inequalities written in matrix form as Ax=b, Cx \le d is convex. ('\le' means 'less than or equal to') (2) Show, using the definition of convex, that (a) f(x)=x^2 is strictly convex on R, (b) f(x)=x is convex on R, and (c) f(x,y)=x^2+y^2 is strictly convex on R^2. </li>
+  <li>9/11 Begin reading Chapter 2; (3) Show, using the definition of convex, that f(x,y)=x^2-y^2 is neither convex nor concave on R^2. (4) For f(x,y)=x^2+y^2, specify two
+different domains (subsets of R^2) which are not convex, such that f has a unique minimum on the first, but not on the second. </li>
+  <li>9/13 (5) Suppose f: S --> R is convex. Show that any local minimizer of f is a global minimizer. (Hint: Suppose x_1 is a local minimizer, and f(x_2) < f(x_1), and find a contradiction.)</li>
+  <li>9/16 2.1,2,3,7,8</li>
+  <li>9/18 none</li>
+  <li>9/20 none</li>
+  <li>9/23 none</li>
+  <li>9/23 (extra meeting) 2.9,13,14,15</li>
+  <li>9/25 3.1 (due on 10/2)</li>
+  <li>9/27 none</li>
+  <li>9/30 none</li>
+  <li>9/30 (extra meeting) 3.2,3,6; Compute the condition number of the Hessian of the Rosenbrock function at its minimizer.</li>
+  <li>10/2 none</li>
+  <li>10/4 5.2,3</li>
+  <li>10/7 (1) Let A be symmetric positive definite. Give formulas for a generalization of the Gram-Schmidt process that take vectors v_1, v_2,v_3, and produces vectors w_1,w_2,w_3 that are A-conjugate, with A-length 1. Show your formulas are correct by showing each of the 3 possible pairs of w_i vectors is A-conjugate, and that each w_i does have the correct A-length. (2) Demonstrate your GS-like process for the matrix A=[1 1 0; 1 2 1; 0 1 2] and vectors v_1=(1,0,0), v_2=(0,1,0),v_3=(0,0,1).</li>
+  <li>10/7 (extra meeting) none</li>
+  <li>10/9 5.5, 6, 1(use MATLAB command 'hilb')</li>
+  <li>10/11none</li>
+  <li>10/14 (NO extra meeting)</li>
+  <li>10/16 none</li>
+  <li>10/18 none</li>
+  <li>10/21-25 Take-home exam, no classes</li>
+  <li>10/28 none</li>
+  <li>10/30 12.20,21,18,15,14</li>
+  <li>11/1 none</li></ul>
+  
+  After 11/4, problems are from Ferris, Mangasarian, & Wright, unless otherwise stated.
+<ul>
+  <li>11/4 none</li>
+  <li>11/6 Handout with 3 problems, 1-1-1</li>
+  <li>11/8 none</li>
+  <li>11/11none</li>
+  <li>11/11 (extra class) 2-2-3, 2-3-3, 2-3-4, 2-4-2, 2-4-3, 2-4-6, 2-4-7</li>
+  <li>11/13 3-1-2, 3-3-2, 3-3-4, 3-3-5, 3-3-6, 3-3-7</li>
+  <li>11/15 none</li>
+  <li>11/18 3-4-2, -3, -4, 3-5-3, -4</li>
+  <li>11/20 3-6-2, -6, -7, -9, -10, -12, -14, -15</li>
+  <li>11/22 none</li>
+  <li>11/25 4-2-2, 4-4-1, -2, -3 </li>
+  <li>11/27 none</li>
+  <li>11/29 THANKSGIVING BREAK</li>
+  <li>12/2 4-5-2</li>
+  <li>12/4 4-6-2, -4, 4-7-1, -4, -5, -6</li>
+  <li>12/6 4-9-1, -3</li>
+  <li>12/9 none</li>
+  <li>12/11 Final Exam handed out</li>
+  <li>12/13 none</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html> 
+
+<!--
+
+<li>11/28 4-9-1,3</li>
+<li>11/30 5-1-2,5</li>
+<li>12/2 5-1-6</li>
+<li>12/5 None</li>
+<li>12/7 None</li>
+<li>12/9 Final exam out</li>
+<li>12/12 None</li>
+<li>12/14 Final exam due 5pm</li>
+<li>12/16 Project due 5pm</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>For Midterm Exam: <a href="MidtermData.m"><span class="s1">MidtermData.m</span></a></p>
+
+  
+  
+  
+  <!-- 
+  
+  
+  <li>9/8 problems 2.1, 2.2, 2.3, 2.7, 2.8</li>
+  <li>9/10 no new problems</li>
+  <li>9/12 no new problems</li>
+  <li>9/15 2.9, 3.2, 3.4</li>
+  <li>9/17 No class</li>
+  <li>9/19 no new problems</li>
+  <li>9/22 problems 2.13, 2.14, 2.15, 2.16</li>
+  <li>9/24 problem 3.1 (also explain what you see happening for each algorithm and starting point, by referring to the plot or level curves of the Rosenbrock function), 3.7</li>
+  <li>9/26 no new problems</li>
+  <li>9/29 problems 3.3, 3.5, 3.6, 5.2, 5.3 and 1) Develop a Gram-schmidt-like process that for any given symmetric, positive definite A and vectors v_1,v_2,...v_k will produce a set of vectors with the same span that are conjugate with respect to A. 2) Demonstrate your process on the matrix A=[1 1 0; 1 2 1; 0 1 2] and vectors (1,0,0), (0,1,0), (0,0,1).</li>
+  <li>10/1 problems 5.1, 5.4, 5.5, 5.6</li>
+  <li>10/3 No class</li>
+  <li>10/6 No new problems</li>
+  <li>10/8 No new problems</li>
+  <li>10/10 (due 10/20) problem 5.6, and 1) Construct some large sparse positive definite matries A with eigenvalues clustered (or not clustered) in several ways. Then produce experimental runs of the CG algorithm to solve Ax=b for some b, showing its performance at each step. You might present the runs with figures like 5.4 and 5.5 in the text, or in some other way that makes the same point.</li>
+  <li>10/13 No new problems</li>
+  <li>10/15  
+    problems 10.1,10.2 and
+    <ol>
+      <li>Derive formula 10.5, for the least squares Hessian.</li>
+      <li>For the data points (1,3.5), (2,5.5), (3,7), (4,8.5) determine the least-squares best fit line, showing all work.</li>
+      <li> For the same data as in (2) determine the least-squares best fit quadratic. </li>
+    </ol>
+  </li>
+  <li>10/17 No new problems</li>
+  <li>10/20 1) Complete the maximum likelihood estimate of p for the genetic example in class. ( Recall f(p)=(p^2)^4 *(2p(1-p) )^36*((1-p)^2)^60 ) </li>
+  <li>10/22 problems 12.15, 12.16, 12.18, 12.20, 12.21</li>
+  <li>10/24 No new problems</li>
+  <li>10/27-11/3 Midterm take-home exam</li>
+  <li>11/3 exercises 1.1.1, 2.2.3, 2.3.3, 2.3.4</li>
+  <li>11/5 exercises 2.4.2, 2.4.3, 2.4.6, 2.4.8</li>
+  <li>11/7 No new problems</li>
+  <li>11/10 No new problems, Project handout</li>
+  <li>11/12 exercises 3.1.2, 3.2.1, 3.3.2, 3.3.4-7</li>
+  <li>11/14 exercises 3.4.2-4</li>
+  <li>11/17 exercises 3.5.3-4</li>
+  <li>11/19 exercises 3.6.6-10, 3.6.12, 3.6.14-17</li>
+  <li>11/21 No new problems</li>
+  <li>11/24 exercises 4.2.2, 4.4.1-2</li>
+  <li>11/26 No new problems</li>
+  <li>12/1 exercises 4.4.3, 4.5.2, 4.6.2, 4.6.4</li>
+  <li>12/3 exercises 4.71., 4.7.5, 4.7.6, 4.9.1</li>
+  <li>12/5</li>
+  <li></li>
+</ul>
+<p>Data for midterm exam, Problem 3: </p>
+<p>t, y = </p>
+<p> 1, 9.25<br>
+  2, 28.87<br>
+  3, 93.16<br>
+  4, 288.32<br>
+  5, 886.32<br>
+  6, 2744.78<br>
+  7, 8499.80<br>
+  8, 26314.18<br>
+  9, 81456.16<br>
+  10, 252162.05</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+
+
+-->

@@ -1,0 +1,183 @@
+\documentclass{report}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{pdfsync}
+\usepackage{graphicx}
+\usepackage{gensymb, xspace}
+
+\usepackage[usenames]{color}
+\definecolor{myblue}{rgb}{.2, .2, .7}
+
+\newcommand\RR{{\mathbb R}}
+\newcommand\QQ{{\mathbb Q}}
+\newcommand\NN{{\mathbb N}}
+\newcommand\dsp{\displaystyle}
+\newcommand\seq{{\left \{ x_n \right \}}_{n = 1}^\infty}
+\newcommand\cotwo{$\operatorname{CO}_2$\xspace}
+
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.0in}
+\setlength{\textwidth}{7in}
+\setlength{\textheight}{9.2in}
+
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+
+\begin{document}
+
+%\
+%
+%\vskip -.6in
+
+\noindent MATH 202 \hfill Name :\underbar{\ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ }
+
+\noindent Midterm 2 \hfill March 23, 2012
+
+\bigskip
+
+\noindent {\bf Instructions:}  Show all work for full credit.  Poor notation or sloppy work will
+be penalized.
+
+\begin{enumerate}
+
+\item (15 pts.) 
+
+\begin{enumerate}
+
+\item (7 pts.) Prove that $\dsp \lim_{(x,y) \to (0,0)} \frac{3xy}{x^2+y^2}$ does not exist.
+
+\vskip 7cm
+
+\item (8 pts.) A particle moves along a curve in $3$-space given by 
+$\mathbf r (t) = \langle 4 \sin(3t), 3t, 4 \cos(3t) \rangle$ meters, 
+where $t$ is measured in seconds.
+Give and evaluate a definite integral that computes the distance traveled by the particle between 
+time $t = 0$ seconds and $t = 2\pi$ seconds. 
+
+\end{enumerate}
+
+
+\newpage
+
+
+\item (8 pts.) Suppose that $w = xy^2 - x^2$ and that at time $t=0$, 
+$(x,y) = (1,2), \; \frac{dx}{dt} \big\vert_{t=0} = -5,$ and $\frac{dy}{dt} = 3$.
+Use the Multivariable Chain Rule to compute $\dsp \frac{dw}{dt}$ when $t = 0$.
+
+\vskip 6cm
+
+\item (12 pts. -- 6 pts. each)  It is well-known that mosquitoes are drawn to \cotwo.  
+Below is a contour plot for the concentration $C(x,y)$ of \cotwo 
+at positions $(x,y)$ in feet on the grid shown.  
+
+\includegraphics[width=7cm]{fg-contour-mosquitoes-2.eps} \hskip 1.5cm \includegraphics[width=7cm]{fg-contour-mosquitoes-3.eps}
+
+\centerline{(a) \hskip 7.8cm (b)}
+
+\begin{enumerate}
+
+\item In Figure (a) on the left, sketch the path
+of a mosquito placed on the $X$ at $(-4,4)$ as it continuously moves
+to maximize its exposure to \cotwo.  Briefly justify the reasoning for
+drawing the path you did.
+
+\vskip 2.5cm
+
+\item In Figure (b) on the right, give the value of the directional derivative
+of $C(x,y)$ in the direction indicated by the vector $\mathbf u$ at the point $P$
+indicated with a dot.  Explain your answer briefly.
+
+\vskip 2.5cm
+
+
+\end{enumerate}
+
+\newpage
+
+\item (10 pts.)
+Find the equation of the tangent plane to the ellipsoid $x^2 + 2y^2 + 9z^2 = 31$ at the point
+$(2,3,1)$.
+
+\vskip 7cm
+
+
+\item (10 pts.) Electrical power $P$ in watts is given by
+$$
+P = \frac{V^2}{R},
+$$
+where $V$ is voltage and $R$ is resistance in ohms.
+
+\begin{enumerate}
+
+\item Give a formula for the total differential $dP$ for power.
+
+\vskip 3.5cm
+
+
+\item If $V = 120$ volts is applied to a $2000$-ohm resistor, compute
+the total differential $dP$ for power.  
+
+\vfill
+
+\hfill $dP = \underbar{\hskip 12cm}$
+
+\end{enumerate}
+
+
+\newpage
+
+\item (17 pts.) Suppose the elevation above sea level in tens of meters 
+is given by the function $$h(x,y) = \frac{y^2}{5-x} \ \text{  tens of } m,$$ and a hiker 
+is located at the position $(x,y) = (4,1)$.  
+
+\begin{enumerate}
+
+\item (6 pts.) In what direction from $(4,1)$ should the hiker move to increase
+his/her elevation the most?
+
+\vskip 5cm
+
+\item (6 pts.) If the hiker moves in the direction indicated by the vector
+$\mathbf{v} = \langle 1, \, -1 \rangle$, what is the rate of change of the hiker's elevation?
+
+\vskip 5cm
+
+\item (5 pts.) Using your answer to part (b), do you expect the hiker's elevation to rise or fall
+as the hiker moves in the direction given by $\mathbf{v}$?
+
+\vskip 2cm
+
+\end{enumerate}
+
+\newpage
+
+\item (16 pts.) Consider the function $f(x,y) = -x^3 + 6xy - 3y^2 +1$.
+
+\begin{enumerate}
+
+\item (8 pts.) Find all critical points of $f(x,y)$.
+
+\vskip 9cm
+
+\item (8 pts.) Use the second derivative test to determine if the critical points are local maxima, local minima, saddle points or if there is not enough information to tell.
+
+\end{enumerate}
+
+\newpage
+
+\item (12 pts.)  {\bf Use Lagrange multipliers} to find the maximum value of $\dsp f(x,y) = xy$ where $x>0$
+and $y>0$, subject to the constraint $\dsp \frac{x^2}{8} + \frac{y^2}{2} = 1$.
+
+
+\vfill
+
+\hskip 1cm  The maximum value is ~\underbar{\hskip 2cm},~ and occurs at $(x,y) =$ ~\underbar{\hskip 5cm}.
+
+\end{enumerate}
+
+\end{document}

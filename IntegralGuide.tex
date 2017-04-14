@@ -1,0 +1,148 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath,amssymb,graphicx}
+
+\setlength{\oddsidemargin}{-.2in} \setlength{\evensidemargin}{-.0in}
+\setlength{\textwidth}{6.5in} \setlength{\textheight}{9.5in}
+
+\setlength{\topmargin}{-.8in} \setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+
+\newcommand{\ds}{\displaystyle}
+
+\begin{document}
+
+\thispagestyle{empty} \
+
+\centerline{\large \bf Multivariable Integral Guide}
+
+\
+
+
+\noindent
+\begin{tabular}{|c|c|c|}
+\hline Integral & Notation & Application \\
+\hline
+
+%\multicolumn{3}{c}{\ } \\
+
+
+\multicolumn{3}{c}{Basic Integrals --- over ``flat'' regions,
+evaluated
+as iterated integrals} \\
+
+\hline
+
+ & & \\
+$\int_a^b f(x)\,dx$& \ & Area under curve; \\
+& &Average value of $f$ on $[a,b] = \frac 1{b-a}\int_a^b f(x)\,dx$;  \\
+& &density=$\rho(x)$, Mass$= \int_a^b \rho(x)\,dx$; \\
+& &velocity$=v(t)$, distance traveled$= \int_a^b v(t)\,dt$; \\
+& & etc.  \\
+
+\hline
+
+ & & \\
+
+$\iint_D f(x,y)\, dA$& $dA=dx\,dy $ & Volume under surface;  \\
+&$\ \  =r\,dr\,d\theta$ & Area of $D=\iint_D dA$\\
+& &Average value of $f$ on $D = \frac 1{\text{Area of $D$}}\iint_D f(x,y)\,dA$;  \\
+& &$\rho(x,y)=$density, Mass$= \iint_D \rho(x,y)\,dA$;\\
+& & etc.  \\
+
+
+\hline
+
+ & & \\
+
+$\iiint_R f(x,y,z) \, dV$&$dV=dx\,dy\,dz$ & Volume of $R=\iiint_R
+dV$\\
+&$\ \ =r \,dz \,dr\, d\theta$ & Average value of $f$ on $R= \frac 1{\text{Volume of $R$}}\iiint_R f(x,y,z)\,dV$ ;  \\
+&$\ \ =\rho^2\sin\phi \,d\rho \,d\phi\, d\theta$ &$\rho(x,y,z)=$density, Mass$= \iiint_R \rho(x,y,z)\,dV$; \\
+& & etc.  \\
+\hline
+
+\multicolumn{3}{c}{\ } \\
+
+\multicolumn{3}{c}{ Integrals of {\bf scalar functions} over
+``curved'' things
+--- require parameterizations, to become iterated integrals}\\
+
+\hline
+
+ & & \\
+ $\int_C f(x,y) ds,$&$\mathbf r(t)$ parameterizes curve $C$ \ & Length of $C= \int_C ds$; \\
+$\int_C f(x,y,z) ds$& $ds=||\mathbf r'(t)|| dt$&Average value of $f$ on $C = \frac 1{\text{Length of C}}\int_C f,ds$\\
+
+
+\hline
+
+ & & \\
+ $\iint_S f(x,y,z)\, dS$&$\Phi(u,v)$ parameterizes surface $S$  & Surface area of $S =\iint_S dS$; \\
+&$T_u=\frac {\partial}{\partial u}\Phi, T_v=\frac {\partial}{\partial v}\Phi $ &Average value of $f$ on $S= \frac 1{\text{Area of $S$}}\iint_S f(x,y,z)\,dS$ \\
+&$dS=||T_u\times T_v||du\,dv $& \\
+\hline
+
+\multicolumn{3}{c}{\ } \\
+
+
+\multicolumn{3}{c}{Integrals of {\bf vector fields} over ``curved''
+things
+--- require parameterizations to become iterated integrals}\\
+
+\hline
+
+ & & \\
+ $\int_C F(x,y)\cdot d\mathbf r$&$\mathbf r(t)$ parameterizes curve $C$ \ & Work ($F$ is force); \\
+$=\int_C P\,dx+Q\,dy,$&$d\mathbf r=\mathbf r'(t) dt$& Circulation ($F$ is velocity, $C$ is a loop) \\
+
+ $\int_C F(x,y,z)\cdot d\mathbf r$& & \\
+$=\int_C Pdx+Qdy+Rdz$ & & \\
+
+
+\hline
+
+ & & \\
+
+$\iint_S F(x,y,z)\cdot d\mathbf S$&$\Phi(u,v)$ parameterizes surface $S$  & Flux of $F$ through $S$ \\
+&$T_u=\frac {\partial}{\partial u}\Phi, T_v=\frac {\partial}{\partial v}\Phi $ & \\
+&$d \mathbf S=T_u\times T_v\,du\,dv $& \\
+\hline
+\end{tabular}
+
+\
+
+\
+
+ \noindent Theorems relating integrals and derivatives
+--- general form: $\ds \iint_B \partial F=\int_{\partial B} F$
+
+\noindent
+\begin{tabular}{|c|c|}
+\hline
+Name& Statement\\
+\hline
+
+Fundamental Theorem of Calculus  (in $\mathbb R$)& $\ds\int_a^b f'(x)\, dx= f(b)-f(a)$\\
+\hline
+
+Fundamental Theorem of Calculus for line integrals & $\ds\int_C \nabla f(x,y,z)\cdot d\mathbf r= f(\text{end of $C$})-f(\text{start of $C$})$\\
+\hline
+
+Green's Theorem (in $\mathbb R^2$)& $\ds \iint_D \left (\frac
+{\partial Q}{\partial
+x}-\frac{\partial P}{\partial y}\right )\,dA= \oint_{C=\partial D} P\,dx+Q\,dy$ \\
+\hline
+
+
+Stokes' theorem (in $\mathbb R^3$)& $\ds \iint_S  \left
+(\nabla\times F \right ) \cdot d\mathbf
+S = \oint_{\partial  S} F\cdot d\mathbf S$ \\
+\hline
+
+
+Gauss' Divergence Theorem (in $\mathbb R^3$) & $ \ds \iiint_R
+\left (\nabla \cdot F \right)\, dV= \iint_{S=\partial R} F\cdot d\mathbf S$ \\
+\hline
+
+\end{tabular}
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass[12pt]{report}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1.25in,footskip=0.25in]{geometry} % Please do not change margins
+
+
+
+\newcommand{\rank}{\operatorname{rank}} % feel free to define your own commands
+
+
+\begin{document}
+
+\hfill Nicolas Bourbaki % Put your name here (and Google "Bourbaki"; we will not follow his style in this course)
+
+\hfill \today 
+
+\centerline{\large{Math 614 Homework}}
+
+\begin{enumerate}
+
+ \item[1.9] % Present problems in order, using numbering from the book
+Let 
+$$A=\begin{pmatrix}1&2&3&4\\5&6&7&8\end{pmatrix}.$$
+Note $\rank{A}\le \min(2,4)=2,$ since $A$ is $2\times 4$.
+Since the rows of $A$ are non-zero, and not multiples of one another, $\rank(A)\ne 0,1$, so $\rank(A)=2$.
+
+\item[1.14] % Include problems you failed to do (with apologetic groveling as you see fit)
+I don't know how to do this, and foolishly did not realize that until it was too late to seek help. It will never happen again.
+
+
+\item[\#1] %Non-text problems, stated in class, will be numbered #1,#2, etc.
+Suppose $A$ has singular value decomposition $A=U\Sigma V^T$, with $U,V$ orthogonal, $\Sigma$ a (possibly non-square) diagonal matrix.
+Then
+\begin{align*}
+AA^T&=(U\Sigma V^T)(U\Sigma V^T)^T\\
+&= (U\Sigma V^T)(V\Sigma^T U^T)\\
+&= U\Sigma (V^TV) \Sigma U^T
+\end{align*}
+But by orthogonality, $V^TV=I$. Letting $\Lambda=\Sigma\Sigma^T$, which is both square and diagonal, yields 
+$$AA^T=U\Lambda U^T.$$
+Multiplying on the right by $U$, and using its orthogonality, gives
+ $$(AA^T) U= U\Lambda.$$
+ This shows the columns of $U$ are right eigenvectors of $A A^T$, with eigenvalues given by the corresponding diagonal element of $\Lambda$. From
+ $\Lambda=\Sigma\Sigma^T$ we see this is just the square of the corresponding singular value of $A$.
+
+
+
+\end{enumerate}
+
+
+\end{document}

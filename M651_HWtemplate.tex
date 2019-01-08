@@ -1,57 +1,75 @@
-\documentclass[10pt]{report}
-\usepackage{amsmath,amssymb,amsthm}% needed for theorem environments and additional math symbols
-\usepackage{setspace}% needed for double spacing
-\usepackage[margin=0.8in]{geometry}% use small margins
+\documentclass{report}
+\usepackage{amsthm, amsmath, amssymb,verbatim,xspace, graphicx}
+\usepackage{pdfsync, listings, color,pgf,tikz}
+\usepackage[all,cmtip]{xy}
 
-%Theorem formatting 
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6in}
+\setlength{\topmargin}{-0.25in} \setlength{\textheight}{8.5in}
+
+\newcommand{\assignmentNumber}[1]{Homework #1 Selected Solutions}
+\newcommand{\duedate}[1]{#1}
+
+\newcommand\R{{\mathbb R}}
+\newcommand\Q{{\mathbb Q}}
+\newcommand\N{{\mathbb N}}
+\newcommand\Z{{\mathbb Z}}
+\newcommand\Zn{\mathbb Z / n \mathbb Z}
+\newcommand\eP{\varphi}
+\newcommand\dsp{\displaystyle}
+
+
 \theoremstyle{plain}
-\newtheorem*{thm}{Theorem}
-\newtheorem*{lem}{Lemma}
-\newtheorem*{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}{Conjecture}
+\newtheorem{quest}{Question}
+\newtheorem*{rem}{Remark}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
+\date{August 24, 2018}
 
-\hfill J. Smith
+\begin{document} 
 
-\hfill Math 651
+% Change to student's name
+\rightline{N. Bourbaki}
+% Change due date below
+\rightline{\duedate{January 23, 2019}}
 
-\hfill 01/30/2013 % date assignment is due
+% Change assignment number below
+\centerline{\sc \large Math 651: Homework 1 }
+\smallskip
 
-\medskip
- 
-\doublespace% begin double-spacing
-  
-\noindent
-page 83
-\begin{description}
 
-\item[1.] 
-\begin{prop} Let $X$ be a topological space and $A\subseteq X$. Suppose for each $x\in A$ there exists an open set $U$ with $x\in U\subseteq A$. Then $A$ is open.
+\begin{itemize}
+
+% If a problem asks you to "show" or "prove" something, state a formal Proposition/Lemma/Theorem, etc. and give a proof. Do NOT state the problem as it was in the text.
+\item[p. 83, \# 1]  
+\begin{thm}Let $X$ be a topological space $X$, and $A\subseteq X$. Suppose for each $x\in A$ there is an open set $U$ with $x\in U\subseteq A$.
+Then $A$ is open.
+\end{thm}
+\begin{proof} To see $A$ is open, observe that \dots
+\end{proof}
+
+% Not all problems require stating a Proposition. If that is not appropriate, state the problem (paraphrasing is ok) and simply do it.
+\item[p. 83, \# 2]  Consider  the nine topologies of Example 1 of section 12, and name them $T_1$ through $T_{12}$ so the first row has $T_1,T_2, T_3$, etc.
+Then for each of the 36 pairs, determine if they are comparable, and which is finer.
+
+Answer: $T_1$ is comparable to all the others, which are all finer than it. $T_2$ \dots
+
+
+% If a problem asks a question, always justify your answer. This is usually best done by stating and proving a proposition
+\item[p. 83, \# 3] 
+\begin{prop} The collection $\mathcal T_c$ in Example 4 of section 12 is a topology on $X$.
 \end{prop}
-\begin{proof}
-Fill in argument here.
+\begin{proof}\dots
+\end{proof}
+\begin{prop} The collection $\mathcal T_\infty=\{U\mid X\smallsetminus U$ is infinite or empty or $X$\} is a topology on $X$.
+\end{prop}
+\begin{proof}\dots
 \end{proof}
 
- \item[2.] 
-Fill in answer here; this problem does not ask for a proof.
-
-\item[3.] 
-\begin{lem} For a set $X$, let $\mathcal T_c$ be the collection of $U\subseteq X$ whose complement is either countable or all of $X$.
-Then $\mathcal T_c$ is a topology on $X$.
-\end{lem}
-\begin{proof}
-Fill in argument here.
-\end{proof}
-
-\begin{lem} For a set $X$, let $\mathcal T_\infty$ be the collection of $U\subseteq X$ whose complement is either infinite or all of $X$.
-Then $\mathcal T_\infty$ IS/IS NOT a topology on $X$.
-\end{lem}
-\begin{proof}
-Fill in argument here.
-\end{proof}
-
-\end{description}
+\end{itemize}
 
 
 \end{document}

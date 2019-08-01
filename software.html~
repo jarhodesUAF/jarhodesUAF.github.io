@@ -29,9 +29,9 @@ span.s21 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; c
 <p class="p2">MSCsimtester:  an R package for testing simulators of the multispecies coalescent process  </p>
 <blockquote>
   <p class="p2">For examples and citation, see &quot;Testing Multispecies Coalescent Simulators using Summary Statitstics&quot;, E.S. Allman, H. Banos, J.A. Rhodes, 2019</p>
-  <p class="p2">  R package: <a href="software/MSCsimtester_0.4.0.tar.gz"><span class="s2">MSCsimtester_0.4.0.tar.gz</span></a></span> 
+  <p class="p2">  R package: <a href="software/MSCsimtester_0.3.0.tar.gz"><span class="s2">MSCsimtester_0.3.0.tar.gz</span></a></span> 
   </p>
-  <p class="p2">Manual: <a href="software/MSCsimtester_0.4.0.pdf"><span class="s2">MSCsimtester_0.4.0.pdf</span></a></span>
+  <p class="p2">Manual: <a href="software/MSCsimtester_0.3.0.pdf"><span class="s2">MSCsimtester_0.3.0.pdf</span></a></span>
   </p>
 </blockquote>
 </body>

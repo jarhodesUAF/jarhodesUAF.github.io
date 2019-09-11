@@ -1,0 +1,3 @@
+\coverpagetotals={parts,page}
+
+continue across pages ?

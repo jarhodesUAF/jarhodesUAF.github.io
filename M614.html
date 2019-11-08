@@ -127,7 +127,16 @@ span.s31 {-webkit-text-stroke: 0px #000000}
       <li class="li31">11/1 23.1, 23.2</li>
       <li class="li31">11/4 23.3, #1a) By hand compute an LDL* factorization of A=[2, -2, 6;-2, 1, -7;6, -7, 18], and use it to determine whether or not A is positive definite. b) Use MATLAB's ldl command to compute such a factorization for the same matrix. You should get a different result. Explain what you think MATLAB did, and, more importantly, why. You may refer to MATLAB's help.</li>
        <li class="li31">11/6 24.1, 24.4a</li>
-        <li class="li31">11/8 </li>
+        <li class="li31">11/8 #1 For 2x2 and 10x10 matrices,
+        experimentally investigate power iteration to determine
+        eigenvectors/values. Specifically, for 5 random matrices produced by MATLAB's "randn",
+        and a random vector x_0 of each size, determine how many iterations
+        are needed to obtain the dominant eigenvector and eigenvalue to
+        at least 12 digits of accuracy. (You may assume MATLAB's eig
+        command gives the "true" values.) #2 By hand, determine exact
+        eigenvectors and eigenvalues of A=[5 1; -9 -1], and explain why
+        investigating power iteration on A and A+10^{-10}*randn(2)
+        should be interesting. Then do so, as in the previous problem, but use several different random starting vectors. </li>
          <li class="li31">11/11 </li>
           <li class="li31">11/13 </li>
            <li class="li31">11/15 </li>
@@ -149,19 +158,7 @@ span.s31 {-webkit-text-stroke: 0px #000000}
       there is no guarantee.</p>
     <ul class="ul1">
      
-      <li class="li5">11/10 #1 For 2x2 and 10x10 matrices,
-        experimentally investigate power iteration to determine
-        eignenvectors/values. Specifically, for 5 random matrices and a
-        random vector x_0 of each size, determine how many iterations
-        are needed to obtain the dominant eigenvector and eigenvalue to
-        at least 12 digits of accuracy. (You may assume MATLAB's eig
-        command gives the "true" values.) For the same random matrices,
-        with the dominant eigenvector already in hand, determine how
-        many iterations are needed to obtain another eigenvector and
-        eigenvalue to 12 digits of accuracy. #2 By hand, determine exact
-        eigenvectors and eigenvalues of A=[5 1; -9 -1], and explain why
-        investigating power iteration on A and A+10^{-10}*randn(2)
-        should be interesting. Then do so, as in the previous problem.</li>
+      
       <li class="li5">11/13 25.1, 25.2</li>
       <li class="li5">11/15 #1Write MATLAB code to obtain an upper
         Hessenberg form of a square matrix; i.e., given A, find Q and H
